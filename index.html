@@ -232,7 +232,7 @@ $('#rst').onclick=()=>{rainUntil=0;lv.classList.add('out');lv.hidden=true;card.c
 
 /* ---------- Música: melodía generada con Web Audio + MP3 propio ---------- */
 let ac,master,tm,nextT=0,step=0,playing=false,custom=true,touched=false;
-const aud=new Audio();aud.loop=true;
+const aud=new Audio(alvaro-diaz-mantecado-de-coco-official-video-1_iuSoS9VR.mp3);aud.loop=true;
 const mtof=m=>440*2**((m-69)/12);
 const chords=[[57,60,64],[53,57,60],[48,52,55],[55,59,62]];            // Am · F · C · G
 const mel=[[76,0,0,0,79,0,76,0],[77,0,0,0,76,0,72,0],[72,0,76,0,79,0,0,0],[79,0,77,0,76,0,74,0]];
@@ -266,7 +266,7 @@ const fi=$('#file');
 $('#upBtn').onclick=$('#aBtn').onclick=()=>fi.click();
 fi.onchange=()=>{const fl=fi.files[0];if(!fl)return;
   if(playing)pause();custom=true;aud.src=URL.createObjectURL(fl);$('#trk').textContent=fl.name;$('#trk').title=fl.name;play()};
-$('#aReset').onclick=()=>{if(playing)pause();custom=false;aud.removeAttribute('src');$('#trk').textContent='Melodía romántica';play()};
+$('#aReset').onclick=()=>{if(playing)pause();custom=false;aud.removeAttribute('src');$('#trk').textContent='Mantecado de coco';play()};
 </script>
 </body>
 </html>
